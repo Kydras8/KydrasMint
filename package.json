@@ -4,6 +4,10 @@
   "description": "Kydras Mint project",
   "main": "index.js",
   "scripts": {
+    "build": "pnpm -r --filter ./apps... build",
+    "dev": "pnpm -r --filter ./apps... dev",
+    "server": "pnpm --filter @kydras/server dev",
+    "ui": "pnpm --filter @kydras/ui dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Your Name",
@@ -15,5 +19,9 @@
     "@semantic-release/github": "^11.0.4",
     "@semantic-release/release-notes-generator": "^14.0.3",
     "semantic-release": "^24.2.7"
-  }
+  },
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ]
 }

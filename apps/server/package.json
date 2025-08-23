@@ -1,0 +1,27 @@
+{
+  "name": "@kydras/server",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node --env-file=.env dist/index.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.0",
+    "@fastify/static": "^7.0.1",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.15.0",
+    "fastify": "^4.28.1",
+    "fastify-plugin": "^4.5.1",
+    "nanoid": "^5.0.7",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "tsx": "^4.19.2",
+    "typescript": "^5.4.5"
+  }
+}
